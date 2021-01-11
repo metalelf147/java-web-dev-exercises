@@ -1,4 +1,4 @@
-package org.launchcode.java.demos.lsn4classes2;
+package launchcode.java.demos.lsn4classes2;
 
 public class Student {
 
@@ -30,17 +30,35 @@ public class Student {
 
 
      //TODO: Uncomment and complete the getGradeLevel method here:
-//    public String getGradeLevel() {
 //        // Determine the grade level of the student based on numberOfCredits
-//    }
+     public String getGradeLevel() {
+         if(Student.numberOfCredits < 30) {
+             return (this.name + "is a freshman.");
+         } else if(Student.numberOfCredits > 29 && Student.numberOfCredits < 60) {
+             return (this.name + "is a sophomore.");
+         } else if(Student.numberOfCredits > 59 && Student.numberOfCredits < 90) {
+             return(this.name + "is a junior.");
+         } else {
+             return(this.name + "is a senior.");
+         }
+     }
 
     // TODO: Complete the addGrade method.
     public void addGrade(int courseCredits, double grade) {
         // Update the appropriate fields: numberOfCredits, gpa
+        // Update the appropriate fields: numberOfCredits, gpa
+        double calculatedGPA = ....
+        double qualityScore = gpa * numberOfCredits;
+        int totalQualityScore =
+        // Use the new course grade and course credits to update their total quality score.???
     }
 
     // TODO: Add your custom 'toString' method here. Make sure it returns a well-formatted String rather
     //  than just the class fields.
+    // public boolean equals (launchcode.java.demos.lsn3classes1.Student){
+        launchcode.java.demos.lsn3classes1.Student chandler = (Maria);
+        return chandler.getStudentId() == getStudentId();
+    }
 
     // TODO: Add your custom 'equals' method here. Consider which fields should match in order to call two
     //  Student objects equal.
